@@ -1,0 +1,175 @@
+/* #Business {
+    margin-left: 110px;
+    margin-right: 110px;
+
+} */
+#BusinessMainContainer {
+    /* border: 2px solid black; */
+    margin-top: 80px;
+}
+
+
+#Business-Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.business-contain-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* z-index: 100px; */
+    /* top: 0; */
+}
+
+#BusinessBox {
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 400px;
+    height: 350px;
+    /* text-align: center; */
+    padding: auto;
+    margin: 2px;
+}
+.item1 {
+   color: white;
+    
+}
+.item2 {
+   color: white;
+    
+}
+.item3 {
+   color: white;
+    
+}
+.item4 {
+   color: white;
+    
+}
+.item5 {
+   color: white;
+    
+}
+.item6 {
+   color: white;
+    
+}
+.item7 {
+   color: white;
+    
+}
+.item8 {
+   color: white;
+    
+}
+.item9 {
+   color: white;
+    
+}
+
+.businessBox1 {
+background-image: url("https://www.ntu.ac.uk/__data/assets/image/0018/650151/children-in-classroom.jpg");
+    
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+
+}
+.businessBox2 {
+    background-image: url("https://www.ispaceoffice.com/wp-content/uploads/2020/11/five-tips-for-an-effective-staff-meeting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox3 {
+    background-image: url("https://www.avendus.com/crypted_storage_img/img_5b068a3ce89093.41594130_packaging-thumbnail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox4 {
+    background-image: url("https://th.bing.com/th/id/R.bf8f044359874b12c37e438e4b9ad875?rik=A9ZlhbDt0kCrKw&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox5 {
+    background-image: url("https://enspiremanagement.com/wp-content/uploads/2021/03/Stores-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox6 {
+    background-image: url("https://th.bing.com/th/id/R.574c95bb700cc27f48bf7964ce6b5015?rik=RqNqZCXwI0JQkg&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox7 {
+    background-image: url("https://live.staticflickr.com/4083/5043499718_2a81b5584b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox8 {
+    background-image: url("https://th.bing.com/th/id/R.29f9745fd9eb5f759cb758120317898f?rik=zTYDpefKOVXmCw&riu=http%3a%2f%2fclipart-library.com%2fimg1%2f794954.png&ehk=JIpCE8CMD2hEduXlAQ41Tb7JYn%2bD3GH7yugbky64wGc%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.businessBox9 {
+    background-image: url("https://th.bing.com/th/id/OIP.8wmGIjKk8K1WyQjg7xTWAQHaEK?pid=ImgDet&rs=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* popUp design */
+
+.popUp-block{
+    display: block;
+    transition: all 2s;
+  }
+  .popUp-none{
+    display: none;
+  }
+  .popUp{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    /* width: 100%; */
+    height: 100%;
+    transition: all 2s;
+    /* display: none; */
+    border: 1px solid black;
+  }
+
+  .popup-item1{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .fa-circle-xmark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: x-large;
+    margin-top: 10px;
+  }

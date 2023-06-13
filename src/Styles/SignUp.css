@@ -1,0 +1,50 @@
+.SignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  /* margin: 45px; */
+height: auto;
+width: 100%;
+ margin-top: 10%;
+  position: relative;
+   
+    /* border: 2px solid black; */
+    
+
+}
+
+.flexItem{
+    width: 400px;
+    height: 500px;
+    background-color: aliceblue;
+    /* height: 400px; */
+}
+
+
+.SignUp label{
+    text-align: center;
+    display: inline-block;
+    /* align-items: center; */
+    font-size: larger;
+    margin: 5px;
+
+}
+
+.SignUp input{
+    display: inline-block;
+    width: 98%;
+    height: 30px;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#submit {
+    display: inline-block;
+    position: relative;
+    background-color: skyblue;
+    width: 165px;
+    font-size: large;
+}
+

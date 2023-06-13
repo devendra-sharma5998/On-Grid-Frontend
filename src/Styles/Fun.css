@@ -1,0 +1,16 @@
+.popup-for-fun{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: brown;
+     color: white;
+     font-size: large;
+     font-weight: bold;
+     top: 0;
+     z-index: 1;
+     display: none;
+}
+.fun-main{
+    border: 1px solid black;
+    position: relative;
+}

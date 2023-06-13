@@ -1,0 +1,29 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin-top: 10%;
+}
+
+.login-Item {
+  width: 400px;
+  margin: 50px;
+  background-color: aliceblue;
+  height: 250px;
+}
+
+.login-container label {
+  font-size: large;
+  display: inline-block;
+  
+}
+
+.login-container input {
+  width: 90%;
+  height: 25px;
+  margin: 5px;
+}
