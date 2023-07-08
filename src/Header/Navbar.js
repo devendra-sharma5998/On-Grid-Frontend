@@ -69,7 +69,7 @@ function handleHome(){
             OurOfferings
           </li>
           <li
-            onClick={() => window.scrollTo({ top: 2450, behavior: "smooth" })}
+            onClick={() => window.scrollTo({ top: 2500, behavior: "smooth" })}
             >
             Business
           </li>
