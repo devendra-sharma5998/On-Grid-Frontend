@@ -7,6 +7,14 @@ import Footer from '../Header/Footer'
 
 const Faq = () => {
 
+  const [state,setState]=useState(false)
+
+  function handleFaq(){
+    if(state==='true'){
+
+    }
+  }
+
    
 const faqs=document.querySelectorAll('.faq')
 
@@ -25,16 +33,9 @@ const faqs=document.querySelectorAll('.faq')
   return (
     <div>
       <Navbar />
-      <section id="faq-header">
-        {/* <img src={download} alt='404'/> */}
-        <div id="faqPage">
-          <h1>Frequrently Asked Questions (FAQs)</h1>
-        </div>
-      </section>
+      
 
-      <h2 style={{ marginLeft: "5%", display: "flex" }}>
-        <b>FAQs by client organizations</b>
-      </h2>
+     
       <section className="faq">
         <div className="container">
           {/* Question */}
@@ -44,7 +45,7 @@ const faqs=document.querySelectorAll('.faq')
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px",position:'relative',marginLeft:'530px' }} />{" "}
             </div>
             <br/>
             <hr/>
@@ -69,6 +70,8 @@ const faqs=document.querySelectorAll('.faq')
             </div>
        
         </div>
+<br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -77,7 +80,7 @@ const faqs=document.querySelectorAll('.faq')
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" ,marginLeft:'335px'}} />{" "}
             {/* <hr/> */}
             </div>
             {/* answer */}
@@ -95,6 +98,8 @@ According to a 2014 survey, a wrong hire can single-handedly bring down the team
             </div>
        
         </div>
+    <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -103,7 +108,7 @@ According to a 2014 survey, a wrong hire can single-handedly bring down the team
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'520px' }} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -122,6 +127,9 @@ Bulk data format shared by the client
               <hr />
             </div>
         </div>
+<br/>
+
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -130,7 +138,7 @@ Bulk data format shared by the client
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'400px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -146,6 +154,7 @@ Some verifications that are dependent on a third party may take longer, and it c
               <hr />
             </div>
         </div>
+        <br/>
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -154,7 +163,7 @@ Some verifications that are dependent on a third party may take longer, and it c
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'0'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -170,6 +179,8 @@ Your point of contact from OnGrid would also suggest the right set of checks for
               <hr />
             </div>
         </div>
+    <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -178,7 +189,7 @@ Your point of contact from OnGrid would also suggest the right set of checks for
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'190px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -190,6 +201,9 @@ Your point of contact from OnGrid would also suggest the right set of checks for
               <hr />
             </div>
         </div>
+
+      <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -198,7 +212,7 @@ Your point of contact from OnGrid would also suggest the right set of checks for
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'90px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -218,6 +232,9 @@ Email from client user to OnGrid operations team.
               <hr />
             </div>
         </div>
+
+      <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -226,7 +243,7 @@ Email from client user to OnGrid operations team.
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'180px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -238,6 +255,9 @@ Email from client user to OnGrid operations team.
               <hr />
             </div>
         </div>
+
+        <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -246,7 +266,7 @@ Email from client user to OnGrid operations team.
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'460px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -258,6 +278,9 @@ Email from client user to OnGrid operations team.
               <hr />
             </div>
         </div>
+
+        <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -266,7 +289,7 @@ Email from client user to OnGrid operations team.
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'220px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -282,6 +305,10 @@ While enhancing data security and privacy is always a work in progress, we do we
               <hr />
             </div>
         </div>
+
+      <br/>
+
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -290,7 +317,7 @@ While enhancing data security and privacy is always a work in progress, we do we
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'320px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -305,6 +332,9 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
               <hr />
             </div>
         </div>
+
+      <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -313,7 +343,7 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'330px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -341,7 +371,7 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'380px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -355,6 +385,8 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
        
         </div>
 
+        <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -363,7 +395,7 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'270px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -375,6 +407,7 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
               <hr />
             </div>
         </div>
+<br/>
 
         <div className="container">
           {/* Question */}
@@ -384,7 +417,7 @@ Consent is key to privacy adherence, and we recommend that the consent must be w
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'290px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -404,6 +437,8 @@ Bulk data format shared by the client
             </div>
         </div>
 
+        <br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -412,7 +447,7 @@ Bulk data format shared by the client
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'460px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -429,6 +464,8 @@ While enhancing data security and privacy is always a work in progress, we do we
             </div>
         </div>
 
+<br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -437,7 +474,7 @@ While enhancing data security and privacy is always a work in progress, we do we
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'250px'}} />{" "}
             </div>
             {/* answer */}
           </div>
@@ -449,6 +486,9 @@ While enhancing data security and privacy is always a work in progress, we do we
               <hr />
             </div>
         </div>
+
+<br/>
+
         <div className="container">
           {/* Question */}
           <div className="question" >
@@ -457,7 +497,7 @@ While enhancing data security and privacy is always a work in progress, we do we
             {/* angle sign */}
             <div>
               
-              <FaAngleDown style={{ fontSize: "x-large", marginTop: "18px" }} />{" "}
+              <FaAngleDown style={{ fontSize: "x-large", marginTop: "10px" ,marginLeft:'313px'}} />{" "}
             </div>
             {/* answer */}
           </div>

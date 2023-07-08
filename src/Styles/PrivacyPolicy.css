@@ -1,0 +1,21 @@
+.Privacy-Header-Img{
+    background-image: url(../Images/T&C.png);
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    font-size: 3.45rem;
+    font-weight: bolder;
+}
+
+.Privacy-container{
+   
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align:justify;
+    margin-block-start: 50px;
+}
+
+.privacy-content{
+    padding-inline-start: 30px;
+    padding-block-start: 10px;
+}

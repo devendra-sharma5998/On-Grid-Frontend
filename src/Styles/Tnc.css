@@ -1,0 +1,27 @@
+.image{
+    background-image: url(../Images/T&C.png);
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    font-size: 3.45rem;
+    font-weight: bolder;
+}
+
+.TnC-Container{
+   margin-block-start: 4em;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    /* margin: auto; */
+    padding-left: 80px;
+    padding-right: 80px;
+
+    /* border: 2px solid black; */
+    /* margin-top: 25px; */
+    /* height: 100vh; */
+}
+
+.tnc-content {
+    padding-inline-start: 30px;
+    padding-block-start: 10px;
+}
+

@@ -25,16 +25,39 @@ const Navbar = () => {
       Navigate("/SignIn");
     }
   }
+
+  function logFun(){
+    const c=localStorage.getItem('token')
+    if(c){
+      Navigate('/')
+      // document.getElementById('navSignIn').style.visibility='none'
+    }else{
+      
+      Navigate('/SignIn')
+    }
+    // if(cd){
+    //   Navigate('/')
+    // }else{
+    //   Navigate('/SignIn')
+    // }
+  }
+
+function handleHome(){
+  Navigate("/")
+}
+
   return (
     <>
       <div className="navbar">
         {/* <nav ref={navRef}> */}
         <ul>
           <li>
-            <img style={{height:'100%'}} src={logoImage} alt="404" />
+            <img style={{height:'100%'}} onClick={()=>handleHome()} src={logoImage} alt="404" />
           </li>
 
-          <li>Home</li>
+<div className="nav" style={{position:'relative',display:'inline-block',paddingLeft:'35px'}}>
+
+          <li onClick={()=>handleHome()}>Home</li>
           <li onClick={() => window.scrollTo({ top: 840, behavior: "smooth" })}>
             {" "}
             WhyOnGrid{" "}
@@ -42,16 +65,17 @@ const Navbar = () => {
 
           <li
             onClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
-          >
+            >
             OurOfferings
           </li>
           <li
-            onClick={() => window.scrollTo({ top: 2350, behavior: "smooth" })}
-          >
+            onClick={() => window.scrollTo({ top: 2450, behavior: "smooth" })}
+            >
             Business
           </li>
 
           <li onClick={() => handle()}>FAQs</li>
+            </div>
         </ul>
         {/* </nav> */}
 
@@ -63,7 +87,7 @@ const Navbar = () => {
             </button>
           </li>
           {/* </Link> */}
-          <li onClick={() => Navigate("/signIn")}>sign in</li>
+          <li onClick={() => logFun()}id="navSignIn">sign in</li>
         </ul>
 
         {/* <button onClick={showNavbar}>

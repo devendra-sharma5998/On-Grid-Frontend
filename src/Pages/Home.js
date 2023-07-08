@@ -8,7 +8,12 @@ const Home = () => {
   const navigate=useNavigate()
 
 const loginIn=()=>{
-  navigate('/signIn')
+  const a=localStorage.getItem('token')
+  if(a){
+    navigate('/')
+  }else{
+    navigate('/signIn')
+  }
 }
 
 

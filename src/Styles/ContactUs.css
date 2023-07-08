@@ -1,0 +1,36 @@
+.contact-image {
+    background-size: fill;
+    height: 400px;
+    width: 100%;
+}
+
+.contact-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* height: 400px; */
+    flex-wrap: wrap;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+   
+    /* width: 400px; */
+
+}
+.contact-container input{
+    width: 50%;
+    margin-left: 23%;
+    
+
+}
+.contact-container label{
+    width: 50%;
+    margin-left: 23%;
+    
+
+}

@@ -40,6 +40,9 @@ function foo3 (){
     return (
  
     <div className="popUpDetail">
+
+      <div className='Offering-head'>
+
       <h1>Our Offerings</h1>
       <p>
         "We offer identity and background verifications for various candidates -
@@ -48,6 +51,7 @@ function foo3 (){
       </p>
       <br/>
       <br/>
+      </div>
 
       <section id="Offering">
         <div>

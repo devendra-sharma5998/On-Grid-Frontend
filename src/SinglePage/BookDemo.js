@@ -1,17 +1,39 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logoImage from '../Images/logoImage.png'
 import '../Styles/BookDemo.css'
 import Footer from '../Header/Footer'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+
 
 
 const BookDemo = () => {
 
     const [isPopupOpen, setPopupOpen] = useState(false);
 
-const togglePopup=()=>{
+    const [state,setState]=useState({
+        name:'',
+        email:'',
+        organisationName:'',
+        age:'',
+        phoneNo:'',
+        onGrid:''
+    })
+
+   const handleChange=((e)=>{
+    setState({...state,
+    [e.target.name]:e.target.value
+    })
+   }) 
+
+const handleClick=async()=>{
+    const {data}=await axios.post('http://localhost:8001/registerdData',{state})
+    console.log(data)
     setPopupOpen(!isPopupOpen)
 }
+    
+
+// This code for to active popUp Modal or Remove
 
 if(isPopupOpen){
     document.body.classList.add('active-modal')
@@ -49,27 +71,39 @@ function foo(){
                     <li>Trusted by 2000+ clients.</li>
                 </ul>
                 </div>
+                <form >
                 <div  id='form'>
                 <label>Name</label>
-        <input type='text ' placeholder='Name' name='Name'/>
+        <input type='text ' value={state.name} onChange={handleChange} placeholder='Name' name='name' required/>
         <label>E-Mail</label>
-        <input type='text ' placeholder='E-Mail' name='E-Mail'/>
+        <input type='text '  value={state.email} onChange={handleChange} placeholder='E-Mail' name='email' required/>
         
         <label>Age</label>
-        <input type='text ' placeholder='Age' name='Age'/>
-        <label>Company Name</label>
-        <input type='text ' placeholder='Company Name' name='CompanyName'/>
-        <label>EmployeeID</label>
-        <input type='text ' placeholder='EmployeeID' name='EmployeeID'/>
+        <input type='text ' value={state.age} onChange={handleChange} placeholder='Age' name='age' required/>
+        <label>Organisation Name</label>
+        <input type='text ' value={state.organisationName} onChange={handleChange} placeholder='organisation Name' name='organisationName' required/>
+       
         <label>PhoneNo</label>
-        <input type='number ' placeholder='PhoneNo' name='PhoneNo'/>
-        <label>Password</label>
-        <input type='password ' placeholder='Password' name='username'/>
+        <input type='number '  value={state.phoneNo} onChange={handleChange} placeholder='PhoneNo' name='phoneNo' required/>
+        <label>How did You learn about OnGrid</label>
+        {/* <input type='text '  placeholder='Please Select' name='OnGrid' required/> */}
+           <select  value={state.onGrid} onChange={handleChange} placeholder='select states' name='onGrid' style={{width:'315px',height:'90px',borderRadius:'10px',border:'2px solid black',textAlign:'center'}}>
+          <option label='Please Select'  >Please Select</option>
+            <option >google search</option>
+            <option value='Media article'>Media article</option>
+            <option value='Linkedin post'>Linkedin post </option>
+            <option value='OnGrid Blog'>OnGrid Blog</option>
+            <option value='Received an email from OnGrid'>Received an email from OnGrid</option>
+            <option value='Referred by an existing OnGrid client'>Referred by an existing OnGrid client</option>
+            <option value='Referred by a friend'>Referred by a friend</option>
+            <option value='I have used ONGrid before'>I have used ONGrid before</option>
+            <option value='Other'>Other</option>
+            </select>
                 <br/>
             {/* <iframe src=''/> */}
             <img src='' className='captcha'/>
             <br/>
-            <button onClick={togglePopup} className='btn-modal'>Submit</button>
+            <button onClick={handleClick}   className='btn-modal'>Submit</button>
 
             {isPopupOpen &&
 
@@ -84,7 +118,7 @@ function foo(){
 <h1>One of our colleagues will get in touch with you soon!</h1>
 <br/>
 <h1>Have a great day!</h1>
-                <button className='btn-close' onClick={togglePopup}>Close</button>
+                <button className='btn-close' onClick={handleClick}>Close</button>
                 </div>
 
             </div>
@@ -93,6 +127,7 @@ function foo(){
                
                
                 </div>
+                </form>
             </div>
 
             <div className='companies'>

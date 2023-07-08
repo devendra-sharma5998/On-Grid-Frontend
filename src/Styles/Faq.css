@@ -1,8 +1,7 @@
 #faqPage {
+    background-image: url("https://www.koimoi.com/wp-content/new-galleries/2022/02/peaky-blinders-season-6-from-finales-plot-to-thomas-shelbys-haircut-here-are-some-amazing-facts-you-should-know-before-entering-the-final-season-001.jpg");
 background-size: fill;
-/* background-repeat: no-repeat; */
 height: 400px;
-background-image: url("https://www.koimoi.com/wp-content/new-galleries/2022/02/peaky-blinders-season-6-from-finales-plot-to-thomas-shelbys-haircut-here-are-some-amazing-facts-you-should-know-before-entering-the-final-season-001.jpg");
 width: 100%;
 
 }
@@ -12,7 +11,7 @@ width: 100%;
     max-width: 98vw;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 250px;
     font-size: 55px;
@@ -34,7 +33,7 @@ width: 100%;
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 75%;
     
   /* border: 2px solid black; */
@@ -47,13 +46,14 @@ width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -10px;
+    text-align: start;
     /* text-decoration: underline; */
     
 }
 
 .question h2 {
     /* font-size: 1.98rem; */
-    font-size: large;
+    /* font-size: large; */
     font-style: italic;
 }
 
@@ -75,10 +75,7 @@ width: 100%;
     max-height: 100vh;
     transition: 2.s ease;
 }
-/* .container: .answer{
-    
-    max-height: 100vh;
-} */
+
 
 
 

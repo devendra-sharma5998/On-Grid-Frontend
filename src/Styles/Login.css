@@ -5,15 +5,24 @@
   flex-wrap: wrap;
   width: 100%;
   position: relative;
-  height: auto;
+  height: 400px;
   margin-top: 10%;
+  /* border: 2px solid black; */
 }
 
 .login-Item {
-  width: 400px;
-  margin: 50px;
-  background-color: aliceblue;
-  height: 250px;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
+  border:1px solid black;
+  /* margin: 50px; */
+  padding: 0;
+  margin: 0;
+  /* background-color:whitesmoke; */
+  height: 100%;
+  /* border: 2px solid black; */
 }
 
 .login-container label {
@@ -26,4 +35,15 @@
   width: 90%;
   height: 25px;
   margin: 5px;
+}
+
+.login-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.login-btn:hover{
+  border: none;
+  background-color: #34d0d0;
 }

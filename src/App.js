@@ -13,14 +13,26 @@ import { Link } from 'react-router-dom';
 import Faq from './SinglePage/Faq';
 import BookDemo from './SinglePage/BookDemo';
 import AllRoutes from './Routes/AllRoutes';
+import ContextProvider from './Context/ContextState';
+import Store from './Context/Context';
+import { useState } from 'react';
 // import NavBar from './TopHeader/NavBar';
 
 function App() {
+
+const [data,setData]=useState([])
+
   return (
     <div className="App">
-      
+      <Store.Provider  value={{data,setData}}>
 
 <AllRoutes/>
+
+      </Store.Provider>
+     
+
+     
+
 
 {/* <NavBar/> */}
 

@@ -3,6 +3,7 @@ import Navbar from '../Header/Navbar'
 import '../Styles/SignUp.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Footer from '../Header/Footer'
 
 const SignUp = () => {
 
@@ -17,7 +18,6 @@ const loginIn=()=>{
   const [state,setState]=useState({
     Name:'',
     EMail:'',
-    // Age:'',
     CompanyName:'',
     EmployeeId:'',
     PhoneNo:'',
@@ -35,20 +35,14 @@ const loginIn=()=>{
 console.log(state)
     const {data} = await axios.post("http://localhost:8001/register",{state});
     console.log(data)
+    if(data){
+      localStorage.setItem("token",data.token);
+      navigate("/")
+    }else{
+      alert("Try Again")
+    }
 
-    // try {
-      
-    //   // await axios.post('http://localhost:5001/register',{
-    //   await axios.post('http://localhost:5001/',{
-    //   state
-    // }).then((res)=>{
-    //   console.log(res)
-    //   // console.log(data)
-    // })
-    // } catch (error) {
-    //   console.log(error.message)
-    // }
-  //  const {data}=await axios.post('http://localhost:5001/register',{state})
+    
   }
  
 
@@ -57,26 +51,26 @@ console.log(state)
 
   return (
     <>
-    {/* <Navbar/> */}
+    <Navbar/>
     <div className='SignUp'>
       <div className='flexItem'>
         <label>Name</label>
-        <input type='text 'value={state.Name} onChange={handleChange} placeholder='Input Username' name='Name'/>
+        <input type='text 'value={state.Name} onChange={handleChange} placeholder='Input Name' name='Name' required/>
         <label>EMail</label>
-        <input type='text ' value={state.EMail} onChange={handleChange} placeholder='Input Username' name='EMail'/>
+        <input type='text ' value={state.EMail} onChange={handleChange} placeholder='Input Email' name='EMail'/>
         
         {/* <label>Age</label>
         <input type='text' value={state.Age} onChange={handleChange} placeholder='Input Username' name='Age'/> */}
         <label>Company Name</label>
-        <input type='text' value={state.CompanyName} onChange={handleChange} placeholder='Input Username' name='CompanyName'/>
+        <input type='text' value={state.CompanyName} onChange={handleChange} placeholder='Input Company Name' name='CompanyName'/>
         <label>EmployeeID</label>
-        <input type='text' value={state.EmployeeId} onChange={handleChange} placeholder='Input Username' name='EmployeeId'/>
+        <input type='text' value={state.EmployeeId} onChange={handleChange} placeholder='Input Employee Id' name='EmployeeId'/>
         <label>PhoneNo</label>
-        <input type='number' value={state.PhoneNo} onChange={handleChange} placeholder='Input Username' name='PhoneNo'/>
+        <input type='number' value={state.PhoneNo} onChange={handleChange} placeholder='Input Phone No' name='PhoneNo'/>
         <label>Password</label>
-        <input type='password ' value={state.Password} onChange={handleChange} placeholder='Input Username' name='Password'/>
+        <input type='password ' value={state.Password} onChange={handleChange} placeholder='Input Password' name='Password'/>
 
-        <button onClick={handleClick}>Submit</button>
+        <button onClick={()=>handleClick()}>Submit</button>
 
         <div style={{display:'flex',justifyContent:'space-evenly',alignItems:'center',flexDirection:'row',padding:'10px'}}>
         <p>Already have an Account click here</p>
@@ -84,6 +78,7 @@ console.log(state)
         </div>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

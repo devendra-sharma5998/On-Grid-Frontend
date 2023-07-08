@@ -180,34 +180,23 @@ background-position: center;
         background-position: center;
         
         }
-.OnGrid2 {
-   
-}
 
-.box4 {
-    
-    
-   
-}
-.box5 {
-    
-}
-
-.OnGrid3 {
-    
-    
-}
-
-.box6 {
-  
-}
-
-
-
-#Gridbox {
-
-}
-
-.Gridbox5 {
-    
-}
+        @media screen and (max-width:920px) {
+            /* .onGridContainer{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                
+            } */
+            .mainGrid{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            /* .box5{
+                width: 150px;
+                margin-left: -50%;
+                justify-content: center;
+                
+            } */
+        }

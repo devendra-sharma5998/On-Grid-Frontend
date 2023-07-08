@@ -1,0 +1,28 @@
+.carrer-image {
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    background-image: url(../Images/aboutImage.png);
+    background-repeat: no-repeat;
+    font-size: 3.45rem;
+    font-weight: bolder;
+}
+
+/* h1{
+    width: 50%;
+    padding: 25px;
+    margin: auto;
+    font-size: 35px;
+} */
+
+.carrer-content {
+    width: 50%;
+    padding: 25px;
+    margin: auto;
+
+}
+
+
+.carrer-container{
+    margin-top: 25px;
+}

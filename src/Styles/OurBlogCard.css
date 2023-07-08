@@ -1,0 +1,48 @@
+.blog-card-main-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    
+    word-wrap: break-word;
+    justify-content: center;
+}
+.blog-card-main-box>h1{
+
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blog-card-main-box>p{
+    font-size: x-large;
+    color: gray;
+}
+.blog-card-main-box:hover{
+    background-color: orangered;
+    color: white;
+}
+.blog-card-main-box:hover>p{
+    columns: white;
+}
+
+.OurBlog-headline-Text:hover{
+    color: orangered;
+}
+
+
+
+.loadMoreBtncontainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .loadMoreBtn{
+    width: 120px;
+    border: none;
+    background-color: rgb(223, 221, 221);
+    color: blue;
+    box-shadow: 0px 3px 0px 0px;
+    box-shadow: aqua
+  }
+  .loadMoreBtn:hover{
+    text-decoration: underline;
+  }

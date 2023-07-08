@@ -82,7 +82,25 @@
 
 }
 
+
+@media screen and (max-width:600px) {
+    
+    #header {
+       width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
                                                                     /* why on grid */
+
+
+
 
                                                                     /*
 
